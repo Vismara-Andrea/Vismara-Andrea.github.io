@@ -178,15 +178,8 @@
     display:flex; align-items:center; justify-content:center;
     position:relative;
   }
-  .photo-frame::after{
-    content:"PHOTO";
-    font-family:'IBM Plex Mono', monospace;
-    font-size:0.7rem;
-    letter-spacing:0.1em;
-    color:var(--ink-soft);
-  }
   .photo-frame img{
-    width:100%; height:100%; object-fit:cover; display:none;
+    width:100%; height:100%; object-fit:cover; display:block;
   }
 
   @media (max-width:680px){
@@ -397,17 +390,17 @@
   </svg>
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow">PhD Candidate · Complexity Science Hub Vienna</p>
+      <p class="eyebrow">PhD Candidate · Complexity Science Hub and University of Vienna</p>
       <h1>Andrea Vismara</h1>
       <p class="role">
         I study the <strong>complex dynamics linking climate change, environmental events and human mobility</strong>,
         combining network science, agent-based modelling and large-scale mobility data. Based in Vienna,
         working across CSH, the University of Vienna and IIASA.
       </p>
-      <a class="cv-button" href="cv.pdf" download>Download CV ↓</a>
+      <a class="cv-button" href="assets/AV-CV-28102026.pdf" download>Download CV ↓</a>
     </div>
     <div class="photo-frame">
-      <img src="" alt="Portrait of Andrea Vismara">
+      <img src="assets/Andrea-Vismara-%40-Anja-Bock-500x500.jpg" alt="Portrait of Andrea Vismara, photographed by Anja Bock" width="500" height="500">
     </div>
   </div>
 </div>
@@ -419,15 +412,18 @@
       <h2>About</h2>
     </div>
     <p>
-      I am a PhD candidate at the Complexity Science Hub working on the complex dynamics that link
-      climate change, environmental events and human mobility. My doctorate is hosted at the
-      University of Vienna, and I am a guest researcher in IIASA's Migration and Sustainable
-      Development research group.
+      I am a PhD candidate at the Complexity Science Hub and the University of Vienna, and a guest
+      researcher in IIASA's Migration and Sustainable Development research group. My research focuses
+      on international remittance flows and how they respond to crises, from environmental disasters
+      and aid cuts to the COVID-19 pandemic. Through my doctorate in Human Geography and the MigraCapax
+      project, I study how migration and financial connections shape social and economic resilience.
     </p>
     <p>
-      My work sits at the intersection of complex systems methods and migration research — I'm
-      interested in how environmental shocks propagate through social and economic networks to shape
-      where and how people move, and in building data-driven tools that make these dynamics legible.
+      Before joining CSH, I worked as a Financial Stability Analyst at the European Central Bank,
+      contributing to climate-risk monitoring with a focus on supply chains, and as a research
+      assistant in ecological macroeconomics at the Vienna University of Economics and Business.
+      I hold an MSc in Socio-Ecological Economics and Policy from the Vienna University of Economics
+      and Business and a BA in Philosophy, Politics, and Economics from Durham University.
     </p>
   </div>
 </section>
@@ -445,7 +441,7 @@
           <div class="affil-name">Complexity Science Hub Vienna</div>
           <div class="affil-role">PhD Candidate</div>
         </div>
-        <div class="affil-dates">2023 — present</div>
+        <div class="affil-dates">2024 — present</div>
       </div>
       <div class="affil-row">
         <div class="affil-mark">UNI&nbsp;VIE</div>
@@ -453,7 +449,7 @@
           <div class="affil-name">University of Vienna</div>
           <div class="affil-role">Doctoral student</div>
         </div>
-        <div class="affil-dates">2023 — present</div>
+        <div class="affil-dates">2026 — present</div>
       </div>
       <div class="affil-row">
         <div class="affil-mark">IIASA</div>
@@ -461,7 +457,7 @@
           <div class="affil-name">International Institute for Applied Systems Analysis</div>
           <div class="affil-role">Guest Researcher — Migration and Sustainable Development</div>
         </div>
-        <div class="affil-dates">2023 — present</div>
+        <div class="affil-dates">2024 — present</div>
       </div>
       <div class="affil-row">
         <div class="affil-mark">ECB</div>
@@ -469,7 +465,7 @@
           <div class="affil-name">European Central Bank</div>
           <div class="affil-role">Analyst (previously Trainee)</div>
         </div>
-        <div class="affil-dates">2021 — 2023</div>
+        <div class="affil-dates">Feb 2023 — May 2024</div>
       </div>
     </div>
   </div>
@@ -483,20 +479,50 @@
     </div>
 
     <div class="pub">
-      <div class="pub-year">2024</div>
-      <div class="pub-title">Title of your publication goes here</div>
-      <div class="pub-meta">A. Vismara, et al. — Journal / Venue Name</div>
+      <div class="pub-year">2026 · Journal article</div>
+      <h3 class="pub-title">Climate input-output amplification: Assessing the impact of physical risks on global supply chains</h3>
+      <div class="pub-meta">Andrea Vismara, Stephan Fahr, Richard Senner</div>
+      <div class="pub-meta"><em>Ecological Economics</em>, 248, 109054.</div>
       <div class="pub-links">
-        <a href="#">DOI</a>
-        <a href="#">PDF</a>
-        <a href="#">Code</a>
-        <a href="#">BibTeX</a>
+        <a href="https://doi.org/10.1016/j.ecolecon.2026.109054" target="_blank" rel="noopener">Publisher / DOI ↗</a>
+        <a href="assets/preprint-input-output.pdf" target="_blank" rel="noopener">Open preprint PDF ↗</a>
+        <a href="assets/preprint-input-output.pdf" download>Download preprint PDF ↓</a>
       </div>
-      <button class="pub-abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open')">show abstract</button>
-      <p class="pub-abstract">
-        Replace this with the actual abstract of your paper. Keep it as the original text from the
-        publication — this is your own work, so no rewriting needed.
-      </p>
+    </div>
+
+    <div class="pub">
+      <div class="pub-year">2026 · Preprint</div>
+      <h3 class="pub-title">Debt relief and remittances can offset foreign aid cuts for most countries, but some remain locked out</h3>
+      <div class="pub-meta">Andrea Vismara, Rafael Prieto-Curiel, Rosie Hayward</div>
+      <div class="pub-meta">arXiv:2608.21843</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2608.21843" target="_blank" rel="noopener">arXiv ↗</a>
+        <a href="assets/preprint-aid-debt-remittances.pdf" target="_blank" rel="noopener">Open PDF ↗</a>
+        <a href="assets/preprint-aid-debt-remittances.pdf" download>Download PDF ↓</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-year">2025 · Preprint</div>
+      <h3 class="pub-title">Migrants as First Responders: A Global Estimate of Disaster-Driven Remittances</h3>
+      <div class="pub-meta">Andrea Vismara, Ola Ali, Carsten Källner, Guillermo Prieto-Viertel, Rafael Prieto-Curiel</div>
+      <div class="pub-meta">arXiv:2512.16373</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2512.16373" target="_blank" rel="noopener">arXiv ↗</a>
+        <a href="assets/preprint-disasters-remittances.pdf" target="_blank" rel="noopener">Open PDF ↗</a>
+        <a href="assets/preprint-disasters-remittances.pdf" download>Download PDF ↓</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-year">2026 · Report contribution</div>
+      <h3 class="pub-title" lang="de">Wie Überweisungen aus der Diaspora helfen, Stürme zu überstehen</h3>
+      <div class="pub-meta">Andrea Vismara, Rafael Prieto-Curiel</div>
+      <div class="pub-meta"><em>WeltRisikoBericht 2026 / WorldRiskReport 2026</em>. Bündnis Entwicklung Hilft / IFHV. German-language contribution, starting on p. 34.</div>
+      <div class="pub-links">
+        <a href="assets/WeltRisikoBericht26_web-1.pdf#page=19" target="_blank" rel="noopener">Open chapter in PDF ↗</a>
+        <a href="assets/WeltRisikoBericht26_web-1.pdf" download>Download full report ↓</a>
+      </div>
     </div>
 
   </div>
@@ -579,27 +605,27 @@
     </div>
     <p style="color:var(--ink-soft); max-width:50ch;">Happy to hear from you about research, collaboration, or anything in between.</p>
     <div class="contact-row">
-      <a class="contact-link" href="mailto:your.email@example.com">
+      <a class="contact-link" href="mailto:vismara@csh.ac.at">
         <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M3 6l9 7 9-7"/></svg>
         Email
       </a>
-      <a class="contact-link" href="https://github.com/yourusername" target="_blank" rel="noopener">
+      <a class="contact-link" href="https://github.com/AndreaVisma" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
         GitHub
       </a>
-      <a class="contact-link" href="https://scholar.google.com/citations?user=yourid" target="_blank" rel="noopener">
+      <a class="contact-link" href="https://scholar.google.com/citations?user=kMMGbekAAAAJ&amp;hl=it" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M12 4 2 9l10 5 8-4.2V15h2V9z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg>
         Scholar
       </a>
-      <a class="contact-link" href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">
+      <a class="contact-link" href="https://orcid.org/0000-0002-3899-1175" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="9.2" r="0.6" fill="currentColor"/><path d="M9.5 11v6M9.5 11h2.7a2.5 2.5 0 0 1 0 5H9.5"/></svg>
         ORCID
       </a>
-      <a class="contact-link" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
+      <a class="contact-link" href="https://www.linkedin.com/in/andrea-vismara-91886716a/" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" stroke-width="1.6"><rect x="3" y="3" width="18" height="18"/><circle cx="8" cy="8" r="0.6" fill="currentColor"/><path d="M8 11v6M12 17v-4a2 2 0 0 1 4 0v4M12 11v.5"/></svg>
         LinkedIn
       </a>
-      <a class="contact-link" href="cv.pdf" download>
+      <a class="contact-link" href="assets/AV-CV-28102026.pdf" download>
         <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 19h16"/></svg>
         Download CV
       </a>
