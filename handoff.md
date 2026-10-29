@@ -30,10 +30,10 @@ Completion criteria: all visible personal information is accurate, and all conta
 
 ## 2. Resolve projects and talks
 
-- [ ] Decide which projects are ready for public presentation; aim for 2–3 substantive entries.
-- [ ] Replace project titles, descriptions, tags, and placeholder repository links with real content.
-- [ ] Replace thumbnail placeholders with relevant research figures or remove the thumbnail treatment.
-- [ ] Remove the stale reference to a “2024 publication” from the placeholder codebase card.
+- [x] Decide which projects are ready for public presentation: aid/debt/remittances and disaster-driven remittances, as requested by Andrea.
+- [x] Replace project titles, descriptions, tags, and placeholder links with real content and the corresponding arXiv links.
+- [x] Remove thumbnail placeholders from the two text-based project cards.
+- [x] Remove unused project placeholders, including the stale reference to a “2024 publication”.
 - [ ] Collect and add actual talk/conference dates, titles, events, locations, and optional slides or recordings.
 - [ ] Hide Projects or Talks if its content is not ready, removing the corresponding navigation link and adjusting section numbering.
 - [ ] Search the entire page for remaining sample text, dummy profiles, and `href="#"` links.
@@ -100,6 +100,8 @@ Completion criteria: the public site loads correctly and all primary actions wor
 
 ## Completion log
 
+- 2026-10-29: Added the Global Remittances and Disasters Atlas to Projects. Verified its title, link to the remittances paper, and visualization credits from the website's public About content: created by Yi Zhe Ang, supervised by Liuhuaying Yang.
+- 2026-10-29: Added two research project cards based on arXiv:2608.21843 and arXiv:2512.16373, with descriptions checked against their abstracts and direct paper links. Removed the remaining project placeholder cards and thumbnail boxes. Talks remain unfinished.
 - 2026-10-29: Andrea confirmed the ECB role ran from February 2023 through May 2024, inclusive. Updated the displayed dates and resolved the discrepancy.
 - 2026-10-29: Applied the completed input form: updated the hero role, affiliation dates, public email and four profile links, and both CV links. Wrote a short About biography using the updated CV. Retained the approved introduction, headings, contact invitation, and spelling conventions. ECB date discrepancy and biography review remain open.
 - 2026-10-29: Added `content-input.md` with current essential content and fields for corrections, public contact/profile links, and CV confirmation. Awaiting answers before updating the site.
