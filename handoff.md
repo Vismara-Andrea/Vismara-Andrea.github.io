@@ -2,21 +2,32 @@
 
 This checklist tracks the work needed to bring Andrea Vismara’s website to a publishable state. Update it as work is completed: mark tasks `[x]`, record relevant decisions or verification results, and add newly discovered work.
 
-Last updated: 2026-10-29
+Last updated: 2026-10-30
 
 ## Current state
 
 - Static, single-page website in `index.html`, with inline CSS and JavaScript.
-- Biography, affiliations, four publication entries, portrait, and local PDFs are present.
-- Projects, talks, and contact/profile links still contain placeholders.
-- Source and asset inventory reviewed; rendered layout, external links, and deployment have not yet been verified.
-- Existing local changes predate this checklist. Preserve them while completing the site.
+- Biography, corrected affiliations, four institutional logos, public contact/profile links, portrait, and current CV are implemented.
+- Publications contains four primary entries and a separate subsection with four non-first-author papers.
+- Projects contains two research paper cards and the Global Remittances and Disasters Atlas, crediting Yi Zhe Ang and supervisor Liuhuaying Yang.
+- Talks & Conferences still contains two placeholder entries; this is the remaining missing content section.
+- Website changes through commit `af10067` have been pushed to `origin/main`. Successful deployment of the latest version and live-site behavior have not yet been verified.
+- Source, local asset existence, logo file validity, and whitespace checks have been performed. Desktop/mobile browser review remains outstanding.
+- Untracked `assets/CV_2025_vismara.pdf` and `assets/desktop.ini` were intentionally excluded from commits; preserve or clean up deliberately.
+
+## Next actions, in order
+
+1. Add real Talks & Conferences entries or hide the section and its navigation link.
+2. Have Andrea review the new About biography.
+3. Finish accessibility, favicon, sharing metadata, footer year, and README.
+4. Complete publication/PDF checks and desktop/mobile visual review, especially logos and long titles.
+5. Verify GitHub Pages deployment and all primary actions on the live site; record results below.
 
 ## 1. Confirm essential content
 
-Input form: [content-input.md](content-input.md). Fill in the answers there; the tasks below remain open until the information is applied to the site and checked.
+Completed input form: [content-input.md](content-input.md). Its answers have been applied; biography review remains open.
 
-- [ ] Confirm the biography, research description, current roles, and affiliation dates.
+- [x] Apply Andrea's confirmed research introduction, current roles, and affiliation dates from the input form and subsequent ECB correction.
 - [x] Confirm the preferred public email address and replace the example email link.
 - [x] Replace the placeholder GitHub, Google Scholar, ORCID, and LinkedIn URLs with user-confirmed profiles; remove profiles that should not be shown.
 - [x] Confirm the current public CV and update both download links to `assets/AV-CV-28102026.pdf`.
@@ -30,23 +41,25 @@ Completion criteria: all visible personal information is accurate, and all conta
 
 ## 2. Resolve projects and talks
 
-- [x] Decide which projects are ready for public presentation: aid/debt/remittances and disaster-driven remittances, as requested by Andrea.
+- [x] Add three public projects: aid/debt/remittances, disaster-driven remittances, and the credited interactive atlas.
 - [x] Replace project titles, descriptions, tags, and placeholder links with real content and the corresponding arXiv links.
 - [x] Remove thumbnail placeholders from the two text-based project cards.
 - [x] Remove unused project placeholders, including the stale reference to a “2024 publication”.
 - [ ] Collect and add actual talk/conference dates, titles, events, locations, and optional slides or recordings.
-- [ ] Hide Projects or Talks if its content is not ready, removing the corresponding navigation link and adjusting section numbering.
+- [ ] If talk details are unavailable, hide Talks and its navigation link and adjust section numbering. Projects is ready to retain.
 - [ ] Search the entire page for remaining sample text, dummy profiles, and `href="#"` links.
 
 Completion criteria: every displayed entry is substantive and accurate; no placeholder content remains.
 
 ## 3. Verify publications and downloads
 
-- [ ] Verify publication titles, author names/order, years, venues, identifiers, and current publication status against authoritative sources.
+- [x] Check the two research project papers and four co-authored entries against their arXiv pages for titles, author order, preprint years, and identifiers.
+- [ ] Finish verification of the primary publication entries, including journal author order, venue/status, and report contribution; reconcile any CV discrepancies with authoritative sources.
 - [ ] Verify every DOI, arXiv, and publisher link.
 - [ ] Open each local publication PDF and confirm that it matches its entry and is suitable for public distribution.
 - [ ] Check the WorldRiskReport chapter destination: the description names printed page 34, while the link uses `#page=19`; determine the correct PDF page before changing it.
-- [ ] Verify that the portrait and every linked asset resolve using the exact deployed filename and case.
+- [x] Verify local existence of referenced portrait/PDF assets and validity of all four logo files.
+- [ ] Verify that the portrait, logos, and every linked asset resolve on the deployed site using the exact filename and case.
 - [ ] Verify both CV download links and all publication open/download actions.
 
 Completion criteria: every publication entry and document link leads to the intended work.
@@ -56,6 +69,7 @@ Completion criteria: every publication entry and document link leads to the inte
 - [ ] Render and inspect the page at desktop, tablet, and narrow mobile widths.
 - [ ] Check navigation fit, long publication titles, affiliation dates, contact buttons, and horizontal overflow.
 - [ ] Review portrait proportions and cropping at each layout size.
+- [ ] Inspect all four affiliation logos for readability, preserved proportions, spacing, and mobile layout.
 - [ ] Add and maintain `aria-expanded` and `aria-controls` for the mobile menu button.
 - [ ] Verify mobile-menu opening, closing after link selection, keyboard operation, and focus visibility.
 - [ ] Add a main-content landmark and a keyboard-accessible skip link.
@@ -68,13 +82,14 @@ Completion criteria: the page is readable and navigable with keyboard and touch,
 
 ## 5. Prepare repository and publication metadata
 
-- [ ] Confirm the intended public URL and GitHub Pages deployment source/settings.
+- [x] Establish repository `Vismara-Andrea/Vismara-Andrea.github.io`, branch `main`, and push access for collaborator `AndreaVisma`.
+- [ ] Confirm GitHub Pages source/settings, latest deployment success, and the live URL `https://vismara-andrea.github.io/`.
 - [ ] Add a favicon.
 - [ ] Review the page title and description; add the canonical URL and social-sharing metadata, including a suitable preview image.
 - [ ] Update the footer copyright year.
 - [ ] Replace the placeholder README with local preview, content maintenance, and deployment instructions.
-- [ ] Review existing Git changes, including the moved CV, and include all required portrait/PDF assets in the release.
-- [ ] Exclude incidental files such as `assets/desktop.ini`; review whether `assets/trial.csv` serves any purpose.
+- [x] Commit and push the current CV, portrait, publication PDFs, logos, and their source record with the page changes.
+- [ ] Add ignore rules for incidental files such as `desktop.ini`; decide whether to retain the unused old CV locally and whether tracked `assets/trial.csv` serves any purpose.
 - [ ] Confirm that no private, temporary, or unintended files are included in the publication changes.
 
 Completion criteria: a clean checkout contains the full site and its assets, with clear instructions for maintaining and publishing it.
@@ -84,8 +99,9 @@ Completion criteria: a clean checkout contains the full site and its assets, wit
 - [ ] Run a final placeholder, internal-anchor, local-asset, and external-link check.
 - [ ] Complete a final desktop/mobile and keyboard review of the release candidate.
 - [ ] Review the final content and changes with Andrea, resolving any outstanding factual or editorial decisions.
-- [ ] Commit the reviewed site and all required assets.
-- [ ] Publish through the confirmed GitHub Pages workflow.
+- [x] Commit and push the implemented content and assets through `af10067`.
+- [ ] Commit and push the remaining finishing changes after review.
+- [ ] Verify that the GitHub Pages workflow successfully publishes the final release commit.
 - [ ] Verify the live URL, HTTPS, navigation, portrait, contact links, CV, and publication PDFs.
 - [ ] Check the live page’s title, description, favicon, canonical URL, and sharing metadata.
 - [ ] Record the release URL, date, verification results, and any deferred improvements below.
@@ -94,12 +110,13 @@ Completion criteria: the public site loads correctly and all primary actions wor
 
 ## Decisions and scope
 
-- Recommended first-release core: About, Affiliations, Publications, and Contact.
-- Include Projects and Talks when their content is ready; their inclusion is still to be decided.
+- Retain About, Affiliations, Publications (including co-authored papers), Projects, and Contact.
+- Talks requires real entries or removal from the visible page before the final release.
 - Retain the existing visual direction and static setup unless review reveals a concrete reason to change them.
 
 ## Completion log
 
+- 2026-10-30: Reconciled this checklist with the implemented page and successful pushes. Separated completed implementation from outstanding biography review, Talks content, technical polish, and deployment/browser verification.
 - 2026-10-30: Replaced the four affiliation abbreviations with locally hosted institutional logos. Added source records in `assets/logos/README.md` and adjusted desktop/mobile logo columns to preserve the full marks. Visual browser review remains pending.
 - 2026-10-29: Added a Co-authored publications subsection with the four non-first-author papers from the updated CV. Checked titles, author order, initial preprint years, and arXiv identifiers against the arXiv pages; included abstract and PDF links. Listed these as preprints without presenting submission venues as accepted publications.
 - 2026-10-29: Added the Global Remittances and Disasters Atlas to Projects. Verified its title, link to the remittances paper, and visualization credits from the website's public About content: created by Yi Zhe Ang, supervised by Liuhuaying Yang.
@@ -111,7 +128,8 @@ Completion criteria: the public site loads correctly and all primary actions wor
 
 ## Release record
 
-- Public URL: pending confirmation
-- Release date: pending
-- Verification results: pending
+- Expected public URL: https://vismara-andrea.github.io/ (live verification pending)
+- Latest pushed commit: `af10067` — Add institutional logos to affiliations
+- Final release date: pending completion of remaining work
+- Verification results: local source/asset checks completed; latest deployment, rendered layouts, live links, and download behavior remain unverified
 - Deferred improvements: none recorded
