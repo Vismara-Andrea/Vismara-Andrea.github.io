@@ -100,6 +100,7 @@ Completion criteria: the public site loads correctly and all primary actions wor
 
 ## Completion log
 
+- 2026-10-30: Replaced the four affiliation abbreviations with locally hosted institutional logos. Added source records in `assets/logos/README.md` and adjusted desktop/mobile logo columns to preserve the full marks. Visual browser review remains pending.
 - 2026-10-29: Added a Co-authored publications subsection with the four non-first-author papers from the updated CV. Checked titles, author order, initial preprint years, and arXiv identifiers against the arXiv pages; included abstract and PDF links. Listed these as preprints without presenting submission venues as accepted publications.
 - 2026-10-29: Added the Global Remittances and Disasters Atlas to Projects. Verified its title, link to the remittances paper, and visualization credits from the website's public About content: created by Yi Zhe Ang, supervised by Liuhuaying Yang.
 - 2026-10-29: Added two research project cards based on arXiv:2608.21843 and arXiv:2512.16373, with descriptions checked against their abstracts and direct paper links. Removed the remaining project placeholder cards and thumbnail boxes. Talks remain unfinished.

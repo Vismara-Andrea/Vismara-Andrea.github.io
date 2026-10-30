@@ -206,7 +206,7 @@
   .affil-list{ display:flex; flex-direction:column; }
   .affil-row{
     display:grid;
-    grid-template-columns:90px 1fr auto;
+    grid-template-columns:130px 1fr auto;
     gap:18px;
     align-items:center;
     padding:18px 0;
@@ -214,15 +214,15 @@
   }
   .affil-row:first-child{ border-top:none; }
   .affil-mark{
-    width:56px; height:56px;
-    border:1px solid var(--line);
-    background:var(--paper);
+    width:120px; height:76px;
     display:flex; align-items:center; justify-content:center;
     font-family:'IBM Plex Mono', monospace;
     font-size:0.65rem;
     color:var(--ink-soft);
     text-align:center;
   }
+  .affil-mark img{display:block; max-width:100%; max-height:70px; width:auto; height:auto; object-fit:contain;}
+  .affil-mark img.ecb-logo{max-height:62px;}
   .affil-name{ font-family:'Fraunces', serif; font-size:1.1rem; font-weight:500; }
   .affil-role{ font-size:0.92rem; color:var(--ink-soft); margin-top:3px; }
   .affil-dates{
@@ -231,9 +231,10 @@
     white-space:nowrap;
   }
   @media (max-width:600px){
-    .affil-row{ grid-template-columns:50px 1fr; }
+    .affil-row{ grid-template-columns:90px minmax(0,1fr); }
     .affil-dates{ grid-column:2; }
-    .affil-mark{ width:40px; height:40px; }
+    .affil-mark{ width:82px; height:64px; }
+    .affil-mark img{max-height:60px;}
   }
 
   /* ---------- publications ---------- */
@@ -442,7 +443,7 @@
     </div>
     <div class="affil-list">
       <div class="affil-row">
-        <div class="affil-mark">CSH</div>
+        <div class="affil-mark"><img src="assets/logos/csh.svg" alt="" width="120" height="76" loading="lazy"></div>
         <div>
           <div class="affil-name">Complexity Science Hub Vienna</div>
           <div class="affil-role">PhD Candidate</div>
@@ -450,7 +451,7 @@
         <div class="affil-dates">2024 — present</div>
       </div>
       <div class="affil-row">
-        <div class="affil-mark">UNI&nbsp;VIE</div>
+        <div class="affil-mark"><img src="assets/logos/university-of-vienna.png" alt="" width="120" height="76" loading="lazy"></div>
         <div>
           <div class="affil-name">University of Vienna</div>
           <div class="affil-role">Doctoral student</div>
@@ -458,7 +459,7 @@
         <div class="affil-dates">2026 — present</div>
       </div>
       <div class="affil-row">
-        <div class="affil-mark">IIASA</div>
+        <div class="affil-mark"><img src="assets/logos/iiasa.png" alt="" width="120" height="76" loading="lazy"></div>
         <div>
           <div class="affil-name">International Institute for Applied Systems Analysis</div>
           <div class="affil-role">Guest Researcher — Migration and Sustainable Development</div>
@@ -466,7 +467,7 @@
         <div class="affil-dates">2024 — present</div>
       </div>
       <div class="affil-row">
-        <div class="affil-mark">ECB</div>
+        <div class="affil-mark"><img class="ecb-logo" src="assets/logos/ecb.svg" alt="" width="62" height="62" loading="lazy"></div>
         <div>
           <div class="affil-name">European Central Bank</div>
           <div class="affil-role">Analyst (previously Trainee)</div>
